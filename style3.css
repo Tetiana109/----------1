@@ -1,9 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
+  margin: 0;
 }
 
 .left {
@@ -13,20 +12,23 @@ body {
   flex-direction: column;
   gap: 8px;
 }
+
 .box {
   padding: 10px;
   border-radius: 2px;
   text-align: start;
   font-size: 24px;
 }
+
 .icon {
   width: 20px;
   height: 20px;
 }
+
 .photo {
   width: 23px;
   height: 23px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .right {
@@ -45,24 +47,28 @@ body {
   overflow: hidden;
   font-size: 20px;
 }
+
 input[type="search"] {
   width: 100%;
   max-width: 720px;
   padding: 12px 40px 12px 20px;
   border: 1px solid #e5e5e5;
   border-radius: 50px;
-  background: #ffffff url('https://static.vecteezy.com/system/resources/previews/009/652/218/non_2x/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg') no-repeat right 18px center / 40px;
+  background: #fff url('https://static.vecteezy.com/system/resources/previews/009/652/218/non_2x/magnifying-glass-icon-isolated-on-white-background-search-illustration-vector.jpg') 
+    no-repeat right 18px center / 40px;
 }
+
 .net {
   padding: 20px;
   border-radius: 50px;
   background: #ebecec;
   text-align: center;
 }
+
 .put {
   width: 38px;
   height: 38px;
-  border-radius: 100%;
+  border-radius: 50%;
 }
 
 .container2 {
@@ -74,6 +80,7 @@ input[type="search"] {
   padding: 10px;
   overflow-x: auto;
 }
+
 .info {
   width: 100%;
   max-width: 175px;
@@ -82,46 +89,52 @@ input[type="search"] {
   justify-content: center;
   align-items: center;
   background: #dbdcdb;
-  color: rgb(0, 0, 0);
+  color: #000;
   padding: 8px 12px;
   border-radius: 10px;
   font-size: 18px;
 }
+
 #info1 {
-  background: black;
-  color: white;
+  background: #000;
+  color: #fff;
 }
 
 .content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  max-width: 12000px;
+  max-width: 1200px;
   margin: auto;
 }
+
 .video .last {
-  width: 550px;
+  width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 10px;
   display: block;
   margin-bottom: 8px;
 }
+
 .meta {
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
+
 .channel {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
+
 .texts {
   display: flex;
   flex-direction: column;
 }
+
 .video-title {
   font-size: 20px;
   font-weight: bold;
@@ -129,6 +142,7 @@ input[type="search"] {
   margin-bottom: 4px;
   line-height: 1.3;
 }
+
 .channel-name {
   font-size: 15px;
   color: #555;
