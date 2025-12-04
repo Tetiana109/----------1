@@ -1,0 +1,106 @@
+body {
+  margin: 50px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.navigator {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px; 
+  background: white;
+}
+
+.nav-clik a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: white;
+}
+
+.hero-img {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+box-shadow: -5px 25px 10px #6d6f70;
+}
+
+.btn {
+  padding: 12px 22px;
+  background: #ff5252;
+  border: none;
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+
+.posts {
+  padding: 40px 60px;
+  background: #f1f7ff;
+}
+
+.posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.post-card {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.works {
+  padding: 40px 60px;
+}
+
+.work-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.work-item img {
+  width: 246px;
+  height: 180px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.year {
+  font-weight: bold;
+  color: white;
+  background: black;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 5px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #555;
+}
+.socials img {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

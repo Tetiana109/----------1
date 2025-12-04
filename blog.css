@@ -1,0 +1,46 @@
+body {
+  margin: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.navigator {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px; 
+}
+
+.nav-clik a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.post-grid {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.post-card {
+  width: 1200px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.title {
+  padding-left: 190px;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #555;
+}
+.socials img {
+  margin: 0 10px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
