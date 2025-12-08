@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&family=Ubuntu:wght@400;700&display=swap');
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.keyboard {
+  display: flex;
+  gap: 10px;
+  max-width: 1300px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.keyboard-left, .keyboard-right {
+  display: grid;
+  gap: 4px;
+}
+
+.keyboard-left {
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(6, 44px);
+  width: 72%;
+}
+
+.keyboard-right {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 44px);
+  width: 28%;
+}
+
+.key {
+  background: #ddd;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.key:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.delete { grid-column: span 2; }
+.backspace { grid-column: span 2; }
+.tab { grid-column: span 2; } 
+.backslash { grid-column: span 1; }
+.caps { grid-column: span 2; }
+.first { grid-column: span 2; }
+.shift-left { grid-column: span 3; }
+.shift-right { grid-column: span 2; }
+.space { grid-column: span 6; }
+.zero { grid-column: span 2; }
+.plus { grid-row: span 2; }
+.enter-second { grid-row: span 2; }
