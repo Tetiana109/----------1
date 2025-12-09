@@ -1,0 +1,101 @@
+@keyframes backrand {
+  0% {
+    background-color: aquamarine; 
+  }
+  25% {
+    background-color: magenta;
+  }
+  75% {
+    background-color: gold;
+  }
+  100% {
+    background-color: maroon;
+  }
+}
+
+body {
+    height: 100vh;    
+    animation-name: backrand;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slide-left_right {
+  0% { 
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+    2% { 
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+  25% { 
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  
+  25.01% {
+    transform: translateX(100vw); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+@keyframes slide-right_left {
+  0% { 
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  
+  2% { 
+    transform: translateX(100vw);
+    opacity: 1;
+  }
+  25% { 
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
+  
+  25.01% {
+    transform: translateX(-100vw); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
+
+.pac_1, .pac_2, .pac_3, .pac_4 {
+    position: absolute;
+    top: 30%;
+    transform: translateY(50%); 
+    width: 150px; 
+    height: auto;
+    animation-duration: 16s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+
+.pac_1 {
+    animation-name: slide-left_right;
+    animation-delay: 0s; 
+}
+
+.pac_2 {
+    animation-name: slide-right_left;
+    animation-delay: 4s; 
+}
+
+.pac_3 {
+    animation-name: slide-left_right;
+    animation-delay: 8s; 
+}
+
+.pac_4 {
+    animation-name: slide-right_left;
+    animation-delay: 12s; 
+}
