@@ -1,16 +1,16 @@
 body {
-  margin: 50px;
+  margin: 20px;
   font-family: Arial, sans-serif;
 }
 
 .navigator {
   display: flex;
   justify-content: flex-end;
-  padding: 20px; 
+  padding: 10px; 
 }
 
 .nav-clik a {
-  margin-left: 20px;
+  margin-left: 15px;
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -23,10 +23,12 @@ body {
 }
 
 .post-card {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -43,4 +45,28 @@ footer {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .post-card {
+    width: 90%; 
+  }
+  .title {
+    padding-left: 50px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .navigator {
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav-clik a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .post-card {
+    width: 95%;
+    padding: 15px;
+  }
 }

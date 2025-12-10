@@ -1,5 +1,5 @@
 body {
-  margin: 50px;
+  margin: 20px;
   font-family: Arial, sans-serif;
   background: #f9f9f9;
 }
@@ -30,6 +30,8 @@ width: 200px;
 height: 200px;
 border-radius: 50%;
 box-shadow: -5px 25px 10px #6d6f70;
+max-width: 100%;
+height: auto;
 }
 
 .btn {
@@ -103,4 +105,49 @@ footer {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .navigator {
+    justify-content: center;
+    padding: 10px;
+  }
+  .nav-clik a {
+    margin: 0 10px;
+    font-size: 0.9em;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+  }
+  .hero-img {
+    order: -1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .posts {
+    padding: 20px;
+  }
+  .post-grid {
+    grid-template-columns: 1fr; 
+  }
+  .posts-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .works {
+    padding: 20px;
+  }
+  .work-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .work-item img {
+    width: 100%; 
+    height: auto;
+  }
 }
