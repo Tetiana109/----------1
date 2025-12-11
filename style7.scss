@@ -1,0 +1,67 @@
+$color-bg-primary: #0a2f10;
+$color-card-bg: #115d1e;
+$color-text-light: #F0F8FF;
+$color-accent-gold: #FFD700;
+$color-shadow-ugly: rgb(215, 255, 0); 
+
+$font-family-body: 'Georgia', serif;
+$font-family-header: 'Arial', sans-serif;
+$font-family-signature: 'Brush Script MT', cursive;
+
+$card-padding: 30px;
+$card-max-width: 400px;
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $color-bg-primary;
+    color: $color-text-light;
+    font-family: $font-family-body;
+}
+
+.new {
+    background-color: $color-card-bg;
+    border: 3px solid $color-accent-gold;
+    padding: $card-padding;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px $color-shadow-ugly;
+    max-width: $card-max-width;
+    width: 90%;
+    text-align: center;
+
+    &__h {
+        margin-bottom: 20px;
+
+        h1 {
+            color: $color-accent-gold;
+            font-family: $font-family-header;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-family: $font-family-signature;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+    }
+
+    &__p {
+        margin-bottom: 25px;
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__img {
+        img {
+            max-width: 50%;
+            height: auto;
+        }
+    }
+}
